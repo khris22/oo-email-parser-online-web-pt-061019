@@ -11,8 +11,8 @@ class EmailParser
     @emails = emails
     emails = emails.split(/[,\s+]/)
   end
-
-emails = []
+# 
+# emails = []
 
   def parse
     # @emails = emails.split (/[,\s+]/)
