@@ -9,12 +9,13 @@ class EmailParser
 
   def initialize(emails)
     @emails = emails
+    emails = emails.split (/[,\s+]/)
   end
 
 emails = []
 
   def parse
-    @emails = emails.split(/[,\s+]/)
+    # @emails = emails.split (/[,\s+]/)
     emails.uniq
     binding.pry
   end
