@@ -17,7 +17,7 @@ emails = []
   def parse
     # @emails = emails.split (/[,\s+]/)
     emails.uniq
-    binding.pry
+    # binding.pry
   end
     # .uniq! ???
 end
