@@ -16,6 +16,7 @@ class EmailParser
   def emails
     emails.split(/[,\s]/)
     emails.delete_if{|string| string.empty?}
+  end
 # emails = []
 
   def parse
