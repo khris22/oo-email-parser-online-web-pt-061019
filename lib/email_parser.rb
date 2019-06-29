@@ -13,14 +13,16 @@ class EmailParser
     # binding.pry
   end
 #
-  def emails
-    emails.split(/[,\s]/)
-    emails.delete_if{|string| string.empty?}
-  end
+  # def emails
+  #   emails.split(/[,\s]/)
+  #   emails.delete_if{|string| string.empty?}
+  # end
 # emails = []
 
   def parse
     # @emails = emails.split (/[,\s+]/)
+    @emails.split(/[,\s]/)
+    @emails.delete_if{|string| string.empty?}
     @emails.uniq
     # binding.pry
   end
