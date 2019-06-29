@@ -21,9 +21,8 @@ class EmailParser
 
   def parse
     # @emails = emails.split (/[,\s+]/)
-    @emails.split(/[,\s]/)
-    @emails.delete!([""])
-    # {|string| string.empty?}
+    email = @emails.split(/[,\s]/)
+      email.delete_if{|string| string.empty?}
     @emails.uniq
     # binding.pry
   end
