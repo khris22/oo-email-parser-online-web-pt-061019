@@ -23,7 +23,7 @@ class EmailParser
     # @emails = emails.split (/[,\s+]/)
     email = @emails.split(/[,\s]/)
       email.delete_if{|string| string.empty?}
-    @emails.uniq
+    email.uniq
     # binding.pry
   end
     # .uniq! ???
