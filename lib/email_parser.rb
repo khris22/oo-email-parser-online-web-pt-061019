@@ -7,7 +7,7 @@ require 'pry'
 class EmailParser
   attr_accessor :emails
 
-  def initialize(emails_str)
+  def initialize(emails)
     @emails = emails_str
   end
 
@@ -19,6 +19,4 @@ emails_str = []
     binding.pry
   end
     # .uniq! ???
-
-
 end
